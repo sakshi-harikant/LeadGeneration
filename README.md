@@ -1,0 +1,2 @@
+<div align="center"><!-- 🚀 HERO BANNER --><img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E1A,50:3457E0,100:6C8BFF&height=240&section=header&text=LeadGen&fontSize=90&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Discover.%20Verify.%20Connect.&descAlignY=58&descSize=20" width="100%"/>
+<!-- 🎯 LOGO --><img src="https://api.iconify.design/lucide:radar.svg?color=%236C8BFF&width=90" />
