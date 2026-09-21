@@ -116,9 +116,7 @@ VITE_API_URL=http://localhost:8000
 | `GET` | `/api/leads/stats` | Dashboard statistics |
 | `GET` | `/api/leads/export/csv` | Export leads to CSV |
 
-## Author
 
-**Sakshi Mohan Harikant**
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/sakshi-harikant)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:connect.sakshi16@gmail.com)
