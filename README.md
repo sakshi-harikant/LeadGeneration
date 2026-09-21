@@ -1,18 +1,16 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E1A,50:3457E0,100:6C8BFF&height=210&section=header&text=LeadGen&fontSize=78&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Discover.%20Verify.%20Connect.&descAlignY=62&descSize=19" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:151923,50:5267C9,100:8EA7FF&height=170&section=header&text=LeadGen&fontSize=68&fontColor=ffffff&fontAlignY=42&desc=Discover.%20Verify.%20Connect.&descAlignY=65&descSize=18" width="100%"/>
 
 <br/>
 
-<img src="https://api.iconify.design/lucide:radar.svg?color=%236C8BFF&width=64"/>
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=25&duration=2500&pause=800&color=5267C9&center=true&vCenter=true&width=800&lines=Discover+professional+contacts;Verify+email+addresses;Manage+your+leads+in+one+place" />
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=20&duration=2600&pause=900&color=6C8BFF&center=true&vCenter=true&width=700&lines=Discover+professional+contacts;Verify+email+addresses;Manage+your+leads+in+one+place" />
-
-<br/><br/>
-
-**A full-stack B2B lead generation platform for discovering, verifying, and managing professional leads.**
+<p align="center">
+<strong>LeadGen</strong> is a full-stack B2B lead generation platform that helps users discover professional contacts, verify email information, and manage leads through a centralized dashboard.
+</p>
 
 </div>
 
@@ -22,73 +20,31 @@
 
 LeadGen simplifies the process of finding professional contacts from companies.
 
-Enter a **company, domain, and keywords**, discover relevant contacts, verify their email information, and manage the results from one dashboard.
+Users can enter a **company name, domain, and keywords** to discover relevant leads, verify their email information, and manage the results from one place.
 
 ```text
 Company + Domain + Keywords
-              ↓
-       Lead Discovery
-              ↓
-      Email Verification
-              ↓
-        Lead Dashboard
-              ↓
-         CSV Export
+            ↓
+      Lead Discovery
+            ↓
+     Email Verification
+            ↓
+       Lead Dashboard
+            ↓
+        CSV Export
 ```
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-<table>
-<tr>
+| 🔍 Lead Discovery | ✅ Email Verification |
+|---|---|
+| Find professional contacts using company, domain, and keywords. | Check email addresses and their verification status. |
 
-<td width="50%" valign="top">
-
-### 🔍 Lead Discovery
-
-Find professional contacts using:
-
-- Company name
-- Domain
-- Keywords
-- Job titles
-
-</td>
-
-<td width="50%" valign="top">
-
-### ✅ Email Verification
-
-Check discovered email addresses and view their verification status.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" valign="top">
-
-### 📊 Lead Dashboard
-
-- Search leads
-- Filter results
-- View lead information
-- Track lead statistics
-
-</td>
-
-<td width="50%" valign="top">
-
-### 📥 Export
-
-Export collected leads as **CSV** for further analysis or CRM use.
-
-</td>
-
-</tr>
-</table>
+| 📊 Lead Dashboard | 📥 Export |
+|---|---|
+| Search, filter, and manage collected leads. | Export lead data as CSV. |
 
 ---
 
@@ -98,19 +54,17 @@ Export collected leads as **CSV** for further analysis or CRM use.
 
 <img src="https://skillicons.dev/icons?i=react,vite,tailwind,js,python,fastapi,mongodb,git,github&theme=dark&perline=9"/>
 
-<br/><br/>
-
-| Frontend | Backend | Database |
-|:---:|:---:|:---:|
-| React | Python + FastAPI | MongoDB Atlas |
-| Vite | REST API | PyMongo |
-| Tailwind CSS | JWT | |
-
 </div>
 
-### 🔗 APIs & Services
-
-**Hunter.io** · **Apollo.io** · **SendGrid**
+| Layer | Technology |
+|---|---|
+| **Frontend** | React, Vite, Tailwind CSS |
+| **Backend** | Python, FastAPI |
+| **Database** | MongoDB Atlas |
+| **Authentication** | JWT |
+| **Lead Services** | Hunter.io, Apollo.io |
+| **Email Service** | SendGrid |
+| **API** | REST |
 
 ---
 
@@ -128,7 +82,7 @@ flowchart LR
 
     B --> M[(🍃 MongoDB Atlas)]
 
-    M --> D[📊 Lead Dashboard]
+    M --> D[📊 Dashboard]
 ```
 
 ---
@@ -163,7 +117,7 @@ http://localhost:5173
 
 ## ⚙️ Environment Variables
 
-### Backend — `backend/.env`
+### `backend/.env`
 
 ```env
 MONGODB_URI=your_mongodb_uri
@@ -173,7 +127,7 @@ JWT_SECRET_KEY=your_secret_key
 SENDGRID_API_KEY=your_sendgrid_api_key
 ```
 
-### Frontend — `frontend/.env`
+### `frontend/.env`
 
 ```env
 VITE_API_URL=http://localhost:8000
