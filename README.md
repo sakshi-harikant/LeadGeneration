@@ -1,18 +1,22 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E1A,50:3457E0,100:6C8BFF&height=220&section=header&text=LeadGen&fontSize=80&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Discover.%20Verify.%20Connect.&descAlignY=58&descSize=20" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E1A,45:3457E0,100:6C8BFF&height=230&section=header&text=LeadGen&fontSize=82&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Discover.%20Verify.%20Connect.&descAlignY=60&descSize=21" width="100%"/>
 
 <br/>
 
-<img src="https://api.iconify.design/lucide:radar.svg?color=%236C8BFF&width=72" />
+<img src="https://api.iconify.design/lucide:radar.svg?color=%236C8BFF&width=72"/>
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=21&duration=2800&pause=900&color=6C8BFF&center=true&vCenter=true&width=750&lines=Discover+professional+contacts;Verify+email+addresses;Organize+and+export+your+leads" />
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=21&duration=2600&pause=900&color=6C8BFF&center=true&vCenter=true&width=760&lines=Discover+professional+contacts;Verify+email+addresses;Manage+your+leads;Export+lead+data+with+ease"/>
 
 <br/><br/>
 
-**A full-stack B2B lead generation platform for discovering, verifying, managing, and exporting professional leads.**
+<p>
+  <strong>Full-stack B2B Lead Generation Platform</strong>
+  <br/>
+  Discover contacts, verify emails, manage leads, and export data from one dashboard.
+</p>
 
 <br/>
 
@@ -20,106 +24,38 @@
 
 ---
 
-## 🎯 Overview
+<div align="center">
 
-**LeadGen** is a full-stack B2B lead generation application that helps users discover professional contacts associated with companies and manage them from a centralized dashboard.
+## 🚀 LeadGen at a Glance
 
-The application combines external lead-data services with email verification, authentication, database storage, filtering, and export functionality.
-
-### Core workflow
-
-```text
-Company / Domain / Keywords
-            ↓
-     Lead Discovery
-            ↓
-    Contact Processing
-            ↓
-     Email Verification
-            ↓
-       MongoDB
-            ↓
-    Lead Dashboard
-            ↓
-      CSV / Excel
-```
-
----
-
-## ✨ Features
+</div>
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" align="center">
 
-### 🔐 Authentication
+### 🔍
+**DISCOVER**
 
-* User signup and login
-* JWT-based authentication
-* Secure password handling
-* Password reset functionality
-* Protected application routes
+Find professional contacts using company and domain information.
 
 </td>
 
-<td width="50%" valign="top">
+<td width="33%" align="center">
 
-### 🔍 Lead Discovery
+### 🛡️
+**VERIFY**
 
-* Search leads by company domain
-* Retrieve professional contact information
-* Contact names and job titles
-* Company information
-* Email discovery
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### ✅ Email Verification
-
-* Email verification
-* Verification status
-* Confidence information
-* Valid / invalid / risky / unknown states
+Check email quality and verification status before outreach.
 
 </td>
 
-<td width="50%" valign="top">
+<td width="33%" align="center">
 
-### 📊 Lead Management
+### 📊
+**MANAGE**
 
-* Centralized lead dashboard
-* Search and filtering
-* Lead statistics
-* Duplicate handling
-* Data validation
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### 📥 Data Export
-
-* Export lead data
-* CSV support
-* Excel-compatible data
-* Easy CRM/data analysis workflow
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🏢 Company Search
-
-* Search using company/domain information
-* Keyword-based lead discovery
-* Pre-loaded company examples
-* Structured lead results
+Search, filter, organize, and export leads from one dashboard.
 
 </td>
 </tr>
@@ -127,72 +63,209 @@ Company / Domain / Keywords
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 About the Project
+
+**LeadGen** is a full-stack B2B lead generation application designed to simplify the process of finding and managing professional contacts.
+
+Instead of collecting contact information manually, users can enter company details and keywords, retrieve relevant lead information through external services, verify email data, and manage the results through a centralized dashboard.
+
+### Input
+
+```text
+Company Name
+Domain Name
+Keywords
+```
+
+### Output
+
+```text
+Name
+Job Title
+Company
+Email
+Phone
+Profile URL
+Email Status
+Confidence
+```
+
+---
+
+## ⚡ How It Works
+
+```mermaid
+flowchart LR
+
+    A[👤 User] --> B[⚛️ React Frontend]
+
+    B --> C[⚡ FastAPI Backend]
+
+    C --> D[🔍 Lead Discovery]
+    C --> E[✅ Email Verification]
+
+    D --> F[(🍃 MongoDB Atlas)]
+    E --> F
+
+    F --> G[📊 Lead Dashboard]
+
+    G --> H[📥 CSV Export]
+```
+
+### Lead Generation Flow
+
+| Step | Process |
+|---|---|
+| **01** | User enters company name, domain, and keywords |
+| **02** | Frontend sends the request to the FastAPI backend |
+| **03** | Backend communicates with lead-data services |
+| **04** | Contact information is collected and structured |
+| **05** | Email information is verified |
+| **06** | Duplicate and invalid records are handled |
+| **07** | Lead data is stored in MongoDB |
+| **08** | Results are displayed in the dashboard |
+| **09** | Users can search, filter, and export leads |
+
+---
+
+## ✨ Core Features
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### 🔐 Authentication
+
+- User registration
+- User login
+- JWT authentication
+- Protected routes
+- Password reset workflow
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🔎 Lead Discovery
+
+- Company-based search
+- Domain-based search
+- Keyword-based search
+- Professional contact discovery
+- Structured lead information
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### ✅ Email Verification
+
+- Email verification
+- Verification status
+- Confidence information
+- Valid / invalid / risky / unknown states
+
+</td>
+
+<td width="50%" valign="top">
+
+### 📊 Lead Dashboard
+
+- View collected leads
+- Search leads
+- Filter lead information
+- Lead statistics
+- Organized lead records
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="50%" valign="top">
+
+### 📥 Export
+
+- CSV export
+- Spreadsheet-compatible data
+- Easy data transfer
+- CRM-ready workflow
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🧹 Data Management
+
+- Duplicate detection
+- Input validation
+- Structured lead records
+- Database persistence
+
+</td>
+
+</tr>
+</table>
+
+---
+
+## 🛠️ Technology Stack
+
+<div align="center">
 
 ### Frontend
 
-<p>
 <img src="https://skillicons.dev/icons?i=react,vite,tailwind,js&theme=dark"/>
-</p>
 
-* React.js
-* Vite
-* JavaScript
-* Tailwind CSS
+<br/><br/>
 
-### Backend
+### Backend & Database
 
-<p>
-<img src="https://skillicons.dev/icons?i=python,fastapi&theme=dark"/>
-</p>
+<img src="https://skillicons.dev/icons?i=python,fastapi,mongodb&theme=dark"/>
 
-* Python
-* FastAPI
-* REST APIs
-* JWT Authentication
+<br/><br/>
 
-### Database
+### Development
 
-<p>
-<img src="https://skillicons.dev/icons?i=mongodb&theme=dark"/>
-</p>
-
-* MongoDB
-* MongoDB Atlas
-* PyMongo
-
-### External Services
-
-* Hunter.io — lead discovery and email-related data
-* Apollo.io — contact/company data where configured
-* SendGrid — email delivery for authentication workflows
-
-### Development Tools
-
-<p>
 <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark"/>
-</p>
 
-* Git
-* GitHub
-* VS Code
+</div>
+
+### Stack Details
+
+| Layer | Technology |
+|---|---|
+| **Frontend** | React.js, Vite, Tailwind CSS |
+| **Backend** | Python, FastAPI |
+| **Database** | MongoDB Atlas |
+| **Authentication** | JWT |
+| **Lead Data** | Hunter.io / Apollo.io |
+| **Email Service** | SendGrid |
+| **API Communication** | REST |
+| **Version Control** | Git & GitHub |
 
 ---
 
 ## 🏗️ System Architecture
 
 ```mermaid
-flowchart LR
+graph TD
 
     U[👤 User]
 
-    FE[⚛️ React Frontend]
-    API[⚡ FastAPI Backend]
+    FE[⚛️ React + Vite]
+    API[⚡ FastAPI]
     DB[(🍃 MongoDB Atlas)]
 
     H[🔍 Hunter.io]
     A[📞 Apollo.io]
-    S[📧 SendGrid]
+    SG[📧 SendGrid]
 
     U --> FE
     FE -->|REST API| API
@@ -201,47 +274,18 @@ flowchart LR
 
     API --> H
     API --> A
-    API --> S
+    API --> SG
 
     H --> API
     A --> API
-    S --> API
+    SG --> API
 
     API --> FE
 ```
 
 ---
 
-## 🔄 Lead Generation Flow
-
-```text
-1. User logs in
-        ↓
-2. User enters:
-   • Company Name
-   • Domain Name
-   • Keywords
-        ↓
-3. Backend validates the request
-        ↓
-4. Lead discovery service is called
-        ↓
-5. Contact information is collected
-        ↓
-6. Email information is verified
-        ↓
-7. Duplicate leads are filtered
-        ↓
-8. Leads are stored in MongoDB
-        ↓
-9. Dashboard displays the results
-        ↓
-10. User can search, filter and export
-```
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 LeadGeneration/
@@ -263,6 +307,7 @@ LeadGeneration/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   ├── services/
+│   │   ├── hooks/
 │   │   └── App.jsx
 │   │
 │   ├── package.json
@@ -274,7 +319,92 @@ LeadGeneration/
 
 ---
 
-## ⚙️ Environment Variables
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/sakshi-harikant/LeadGeneration.git
+cd LeadGeneration
+```
+
+---
+
+### 2. Backend Setup
+
+Navigate to the backend:
+
+```bash
+cd backend
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv venv
+```
+
+Activate it on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Start the backend:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Backend will run at:
+
+```text
+http://localhost:8000
+```
+
+FastAPI documentation:
+
+```text
+http://localhost:8000/docs
+```
+
+---
+
+### 3. Frontend Setup
+
+Open a new terminal:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Frontend will run at:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## ⚙️ Environment Configuration
 
 ### Backend
 
@@ -283,6 +413,8 @@ Create:
 ```text
 backend/.env
 ```
+
+Add:
 
 ```env
 MONGODB_URI=mongodb+srv://...
@@ -300,183 +432,149 @@ Create:
 frontend/.env
 ```
 
+Add:
+
 ```env
 VITE_API_URL=http://localhost:8000
 ```
 
-> Never commit API keys, passwords, JWT secrets, or MongoDB credentials to GitHub.
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/sakshi-harikant/LeadGeneration.git
-cd LeadGeneration
-```
-
-### 2. Set up the backend
-
-```bash
-cd backend
-python -m venv venv
-```
-
-Activate the virtual environment on Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Start the API:
-
-```bash
-uvicorn app.main:app --reload
-```
-
-Backend:
-
-```text
-http://localhost:8000
-```
-
-API documentation:
-
-```text
-http://localhost:8000/docs
-```
-
-### 3. Set up the frontend
-
-Open a new terminal:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend:
-
-```text
-http://localhost:5173
-```
+> ⚠️ Never commit `.env` files or API keys to GitHub.
 
 ---
 
 ## 📡 API Endpoints
 
-| Method | Endpoint                    | Purpose                       |
-| ------ | --------------------------- | ----------------------------- |
-| `POST` | `/api/auth/signup`          | Create a new account          |
-| `POST` | `/api/auth/login`           | Authenticate a user           |
-| `POST` | `/api/auth/forgot-password` | Start password reset          |
-| `POST` | `/api/leads/search/domain`  | Search leads by domain        |
-| `GET`  | `/api/leads/`               | Retrieve leads                |
-| `GET`  | `/api/leads/stats`          | Retrieve dashboard statistics |
-| `GET`  | `/api/leads/export/csv`     | Export leads as CSV           |
+### Authentication
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/auth/signup` | Create a new account |
+| `POST` | `/api/auth/login` | Authenticate a user |
+| `POST` | `/api/auth/forgot-password` | Start password reset |
+
+### Leads
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/leads/search/domain` | Search leads by domain |
+| `GET` | `/api/leads/` | Retrieve leads |
+| `GET` | `/api/leads/stats` | Retrieve dashboard statistics |
+| `GET` | `/api/leads/export/csv` | Export leads as CSV |
 
 ---
 
-## 🗄️ Data Model
+## 🔎 Lead Search Example
 
-A lead can contain information such as:
-
-```text
-Lead
-├── Name
-├── Job Title
-├── Company
-├── Domain
-├── Email
-├── Phone
-├── LinkedIn / Profile URL
-├── Email Status
-├── Confidence
-└── Created At
-```
-
-User accounts contain authentication-related information required for accessing the application.
-
----
-
-## 🔎 Lead Search
-
-The application accepts three primary inputs:
+### Input
 
 ```text
-Company Name
-Domain Name
-Keywords
-```
-
-Example:
-
-```text
-Company: Shopify
-Domain: shopify.com
+Company Name: Shopify
+Domain Name: shopify.com
 Keywords: Engineering Manager
 ```
 
-The backend processes the request and returns structured lead information that can be reviewed from the dashboard.
-
----
-
-## 📊 Dashboard
-
-The dashboard provides a centralized view of collected leads.
-
-Users can:
-
-* View discovered leads
-* Search leads
-* Filter lead information
-* Check email status
-* Review lead statistics
-* Export collected data
-
----
-
-## 📥 Export
-
-Lead information can be exported for further processing or use with external CRM and spreadsheet workflows.
-
-Supported format:
+### Processing
 
 ```text
-CSV
+Shopify
+   ↓
+shopify.com
+   ↓
+Lead Discovery
+   ↓
+Contact Processing
+   ↓
+Email Verification
+   ↓
+Duplicate Check
+   ↓
+MongoDB
 ```
 
-Excel-compatible data can be opened directly using spreadsheet applications.
+### Result
+
+```text
+┌──────────────────────────────────────────────┐
+│ Name              Job Title                 │
+│ Email             Company                   │
+│ Phone             Verification Status       │
+│ Profile URL       Confidence                │
+└──────────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Dashboard Capabilities
+
+The dashboard provides a centralized workspace for collected leads.
+
+### Users can:
+
+- 🔍 Search leads
+- 🎯 Filter results
+- 📈 View lead statistics
+- ✅ Check email status
+- 🏢 View company information
+- 📥 Export lead data
+- 🧹 Manage duplicate records
+
+---
+
+## 🗄️ Lead Data Structure
+
+A typical lead record contains:
+
+```json
+{
+  "name": "Example Person",
+  "job_title": "Engineering Manager",
+  "company": "Example Company",
+  "domain": "example.com",
+  "email": "person@example.com",
+  "phone": "+91XXXXXXXXXX",
+  "profile_url": "https://example.com/profile",
+  "email_status": "valid",
+  "confidence": 92
+}
+```
 
 ---
 
 ## 🔒 Security
 
-The application includes:
+LeadGen uses several measures to protect application data:
 
-* JWT-based authentication
-* Protected API routes
-* Environment-based secret management
-* Password reset workflow
-* Input validation
-* Duplicate lead handling
+- JWT-based authentication
+- Protected API routes
+- Environment variables for secrets
+- Password reset workflow
+- Input validation
+- Duplicate lead handling
+- Server-side API key protection
 
-API credentials are stored using environment variables rather than being hard-coded into the source code.
+API keys are kept on the backend and are not exposed directly to the frontend.
 
 ---
 
-## 🧪 Local Development
+## 📥 Export Workflow
 
-Run the backend:
+```text
+Dashboard
+    ↓
+Select / Filter Leads
+    ↓
+Export
+    ↓
+CSV File
+    ↓
+Spreadsheet / CRM / Analysis
+```
+
+---
+
+## 🧪 Development Commands
+
+### Backend
 
 ```bash
 cd backend
@@ -484,57 +582,28 @@ venv\Scripts\activate
 uvicorn app.main:app --reload
 ```
 
-Run the frontend in another terminal:
+### Frontend
 
 ```bash
 cd frontend
 npm run dev
 ```
 
-Then open:
+### Production Build
 
-```text
-http://localhost:5173
+```bash
+npm run build
 ```
 
 ---
 
-## 🗺️ Future Improvements
-
-Potential future improvements include:
-
-* Advanced lead filtering
-* More export formats
-* Additional CRM integrations
-* Improved duplicate detection
-* Background lead-processing jobs
-* More detailed analytics
-* Additional data providers
-* Role-based access control
-
----
-
-## 👩‍💻 Author
-
 <div align="center">
 
-<img src="https://api.iconify.design/lucide:user-circle-2.svg?color=%236C8BFF&width=64"/>
-
-### Sakshi Mohan Harikant
-
-<a href="https://github.com/sakshi-harikant">
-<img src="https://img.shields.io/badge/GitHub-0B0E1A?style=for-the-badge&logo=github&logoColor=6C8BFF&labelColor=0B0E1A"/>
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-### LeadGen
+## 🔗 LeadGen
 
 **Discover. Verify. Connect.**
+
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C8BFF,50:3457E0,100:0B0E1A&height=120&section=footer" width="100%"/>
 
