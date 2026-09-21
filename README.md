@@ -1,50 +1,31 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:151923,50:5267C9,100:8EA7FF&height=170&section=header&text=LeadGen&fontSize=68&fontColor=ffffff&fontAlignY=42&desc=Discover.%20Verify.%20Connect.&descAlignY=65&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:151923,50:5267C9,100:8EA7FF&height=165&section=header&text=LeadGen&fontSize=68&fontColor=ffffff&fontAlignY=42&desc=Discover.%20Verify.%20Connect.&descAlignY=65&descSize=18" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=25&duration=2500&pause=800&color=5267C9&center=true&vCenter=true&width=800&lines=Discover+professional+contacts;Verify+email+addresses;Manage+your+leads+in+one+place" />
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=26&duration=2500&pause=800&color=5267C9&center=true&vCenter=true&width=850&lines=Discover+professional+contacts;Verify+email+addresses;Manage+your+leads+in+one+place" />
 
 <br/><br/>
 
-<p align="center">
-<strong>LeadGen</strong> is a full-stack B2B lead generation platform that helps users discover professional contacts, verify email information, and manage leads through a centralized dashboard.
+<p>
+<strong>LeadGen</strong> is a full-stack B2B lead generation platform that helps users discover professional contacts, verify email information, and manage leads from a centralized dashboard.
 </p>
 
 </div>
 
 ---
 
-## 🎯 What is LeadGen?
+## 🎯 What It Does
 
-LeadGen simplifies the process of finding professional contacts from companies.
+Enter a **company name, domain, and keywords** to find relevant professional contacts and organize them in one place.
 
-Users can enter a **company name, domain, and keywords** to discover relevant leads, verify their email information, and manage the results from one place.
+**LeadGen provides:**
 
-```text
-Company + Domain + Keywords
-            ↓
-      Lead Discovery
-            ↓
-     Email Verification
-            ↓
-       Lead Dashboard
-            ↓
-        CSV Export
-```
-
----
-
-## ✨ Key Features
-
-| 🔍 Lead Discovery | ✅ Email Verification |
-|---|---|
-| Find professional contacts using company, domain, and keywords. | Check email addresses and their verification status. |
-
-| 📊 Lead Dashboard | 📥 Export |
-|---|---|
-| Search, filter, and manage collected leads. | Export lead data as CSV. |
+- 🔍 **Lead Discovery** — Find professional contacts using company and domain information.
+- ✅ **Email Verification** — Check discovered email addresses and their status.
+- 📊 **Lead Management** — Search, filter, and manage collected leads.
+- 📥 **CSV Export** — Export lead data for further use.
 
 ---
 
@@ -56,38 +37,17 @@ Company + Domain + Keywords
 
 </div>
 
-| Layer | Technology |
+| | Technologies |
 |---|---|
-| **Frontend** | React, Vite, Tailwind CSS |
-| **Backend** | Python, FastAPI |
-| **Database** | MongoDB Atlas |
+| **Frontend** | React · Vite · Tailwind CSS · JavaScript |
+| **Backend** | Python · FastAPI · REST API |
+| **Database** | MongoDB Atlas · PyMongo |
 | **Authentication** | JWT |
-| **Lead Services** | Hunter.io, Apollo.io |
-| **Email Service** | SendGrid |
-| **API** | REST |
+| **Integrations** | Hunter.io · Apollo.io · SendGrid |
 
 ---
 
-## 🏗️ Architecture
-
-```mermaid
-flowchart LR
-
-    U[👤 User] --> F[⚛️ React]
-    F --> B[⚡ FastAPI]
-
-    B --> H[🔍 Hunter.io]
-    B --> A[📞 Apollo.io]
-    B --> S[📧 SendGrid]
-
-    B --> M[(🍃 MongoDB Atlas)]
-
-    M --> D[📊 Dashboard]
-```
-
----
-
-## 🚀 Quick Start
+## 🚀 Getting Started
 
 ### Backend
 
@@ -107,17 +67,13 @@ npm install
 npm run dev
 ```
 
-Open:
-
-```text
-http://localhost:5173
-```
+Open **http://localhost:5173**
 
 ---
 
-## ⚙️ Environment Variables
+## ⚙️ Environment
 
-### `backend/.env`
+### Backend — `backend/.env`
 
 ```env
 MONGODB_URI=your_mongodb_uri
@@ -127,13 +83,13 @@ JWT_SECRET_KEY=your_secret_key
 SENDGRID_API_KEY=your_sendgrid_api_key
 ```
 
-### `frontend/.env`
+### Frontend — `frontend/.env`
 
 ```env
 VITE_API_URL=http://localhost:8000
 ```
 
-> 🔒 Keep API keys and database credentials private. Never commit `.env` files.
+> 🔒 Keep API keys and `.env` files private.
 
 ---
 
@@ -164,8 +120,6 @@ LeadGeneration/
 
 <div align="center">
 
-### LeadGen
-
-**Discover. Verify. Connect.**
+**LeadGen — Discover. Verify. Connect.**
 
 </div>
