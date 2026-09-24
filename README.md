@@ -1,6 +1,6 @@
 <div align="center">
 
-# LeadGeneration
+# LeadGen
 
 **A full-stack B2B lead generation platform that discovers contacts, verifies emails, and organizes leads in one dashboard.**
 
@@ -9,11 +9,15 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
 
-[Quick Start](#quick-start) • [Features](#features) • [Architecture](#architecture) • [API](#api-reference)
+[Live Demo](https://leadgen-frontend-six.vercel.app) • [Quick Start](#quick-start) • [Features](#features) • [Architecture](#architecture) • [API](#api-reference)
 
 </div>
 
 ---
+
+## Live Demo
+
+🔗 **[leadgen-frontend-six.vercel.app](https://leadgen-frontend-six.vercel.app)**
 
 ## Overview
 
@@ -116,11 +120,17 @@ VITE_API_URL=http://localhost:8000
 | `GET` | `/api/leads/stats` | Dashboard statistics |
 | `GET` | `/api/leads/export/csv` | Export leads to CSV |
 
+## Author
 
-
+**Sakshi Mohan Harikant**
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/sakshi-harikant)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:connect.sakshi16@gmail.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sakshi.mohan@cmr.edu.in)
 
 ---
 
+<div align="center">
+
+If this project helped you, consider giving it a ⭐
+
+</div>
