@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const API_URL = import.meta.env.VITE_API_URL || 'https://leadgen-backend-04l6.onrender.com'
 
 // ---------- Ambient network background (visual only, no logic here) ----------
 const NetworkBackground = () => {
