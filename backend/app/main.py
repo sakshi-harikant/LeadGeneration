@@ -19,7 +19,9 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "https://leadgen-frontend-six.vercel.app",
+        "https://leadgen-frontend-bfinuutjj-sakshi-mohan-harikant-s-projects.vercel.app",
     ],
+    allow_origins_regex="https://.*\\.vercel\\.app",  # ← NEW LINE
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
