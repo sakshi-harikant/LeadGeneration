@@ -1,6 +1,6 @@
 <div align="center">
 
-# LeadGeneration
+# Lead Generation
 
 **A full-stack B2B lead generation platform that discovers contacts, verifies emails, and organizes leads in one dashboard.**
 
