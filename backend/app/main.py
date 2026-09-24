@@ -16,12 +16,7 @@ app = FastAPI(
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://leadgen-frontend-six.vercel.app",
-        "https://leadgen-frontend-bfinuutjj-sakshi-mohan-harikant-s-projects.vercel.app",
-    ],
-    allow_origins_regex="https://.*\\.vercel\\.app",  # ← NEW LINE
+    allow_origin_regex=r"https://.*\.vercel\.app|http://localhost:5173",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
